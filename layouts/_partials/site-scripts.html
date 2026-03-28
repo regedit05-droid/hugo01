@@ -1,0 +1,3 @@
+{{ range site.Params.custom_js }}
+<script src="{{ urls.RelURL (.) }}" defer></script>
+{{ end }}

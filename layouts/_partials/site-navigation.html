@@ -1,0 +1,24 @@
+<header class="corp-header">
+  <div class="wrap nav-row">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav">菜单</button>
+    {{ if .Site.Menus.main }}
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
+        {{ range .Site.Menus.main }}
+          {{ if not .Parent }}
+            <div class="nav-item {{ if .HasChildren }}has-children{{ end }}">
+              <a href="{{ .URL }}" class="nav-link">{{ .Name }}</a>
+              {{ if .HasChildren }}
+                <div class="sub-menu" aria-label="{{ .Name }} 子菜单">
+                  {{ range .Children }}
+                    <a href="{{ .URL }}" class="sub-link">{{ .Name }}</a>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        {{ end }}
+      </nav>
+    {{ end }}
+  </div>
+</header>

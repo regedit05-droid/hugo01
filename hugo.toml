@@ -1,0 +1,104 @@
+baseURL = "https://example.com/"
+languageCode = "zh-CN"
+title = "浙江花语鲜花有限公司"
+theme = "ananke"
+enableRobotsTXT = true
+
+[params]
+description = "城市鲜花配送与花艺定制服务，提供节日花礼、企业用花与婚礼花艺方案"
+custom_css = ["css/enterprise.css"]
+custom_js = ["js/enterprise.js"]
+keywords = ["鲜花配送", "花艺定制", "节日花礼", "企业用花", "婚礼花艺"]
+
+[menu]
+	[[menu.main]]
+		name = "首页"
+		url = "/"
+		weight = 1
+	[[menu.main]]
+		name = "关于我们"
+		identifier = "about"
+		url = "/about/"
+		weight = 2
+	[[menu.main]]
+		name = "公司介绍"
+		parent = "about"
+		url = "/about/"
+		weight = 21
+	[[menu.main]]
+		name = "发展历程"
+		parent = "about"
+		url = "/about/"
+		weight = 22
+	[[menu.main]]
+		name = "资质荣誉"
+		parent = "about"
+		url = "/about/"
+		weight = 23
+	[[menu.main]]
+		name = "鲜花产品"
+		identifier = "products"
+		url = "/manufacturing/"
+		weight = 3
+	[[menu.main]]
+		name = "玫瑰花束"
+		parent = "products"
+		url = "/manufacturing/"
+		weight = 31
+	[[menu.main]]
+		name = "节日花礼"
+		parent = "products"
+		url = "/manufacturing/"
+		weight = 32
+	[[menu.main]]
+		name = "绿植与盆栽"
+		parent = "products"
+		url = "/manufacturing/"
+		weight = 33
+	[[menu.main]]
+		name = "花艺服务"
+		identifier = "services"
+		url = "/services/"
+		weight = 4
+	[[menu.main]]
+		name = "婚礼花艺"
+		parent = "services"
+		url = "/services/"
+		weight = 41
+	[[menu.main]]
+		name = "企业活动布置"
+		parent = "services"
+		url = "/services/"
+		weight = 42
+	[[menu.main]]
+		name = "花店加盟支持"
+		parent = "services"
+		url = "/services/"
+		weight = 43
+	[[menu.main]]
+		name = "门店网络"
+		url = "/stores/"
+		weight = 45
+	[[menu.main]]
+		name = "企业文化"
+		url = "/culture/"
+		weight = 5
+	[[menu.main]]
+		name = "新闻中心"
+		identifier = "news"
+		url = "/news/"
+		weight = 6
+	[[menu.main]]
+		name = "新闻动态"
+		parent = "news"
+		url = "/news/"
+		weight = 61
+	[[menu.main]]
+		name = "客户案例"
+		parent = "news"
+		url = "/news/"
+		weight = 62
+	[[menu.main]]
+		name = "联系我们"
+		url = "/contact/"
+		weight = 7
